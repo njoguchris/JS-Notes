@@ -1,4 +1,5 @@
 # JS Introduction
+> * By Chris Njogu
 
 [TOC]
 
