@@ -1,8 +1,7 @@
 # JS Versions
 > * By Chris Njogu
 
-[JS Introduction](./introduction.md) |  [JS Version](./version.md) | [JS Script Location](./script-location.md) | [JS Output](./output.md)
-
+[Back to JS Introduction](./introduction.md) | [Next to JS Script Location](./script-location.md)
 
 ## JavaScript
 
@@ -40,3 +39,5 @@
 
 
 ----
+
+[Back to JS Introduction](./introduction.md) | [Next to JS Script Location](./script-location.md)
