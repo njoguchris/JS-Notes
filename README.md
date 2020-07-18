@@ -1,6 +1,6 @@
 # JavaScript Notes
 
-My notes for JavaScript.
+This are a compilation of shorthand notes for JavaScript. I believe they are going to give you an overview of JavaScript
 
 ## JavaScript Basic Concepts and Syntax
 
