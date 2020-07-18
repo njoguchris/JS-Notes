@@ -1,7 +1,7 @@
 # JS Output
 > * By Chris Njogu
 
-[JS Introduction](./introduction.md) |  [JS Version](./version.md) | [JS Script Location](./script-location.md) | [JS Output](./output.md)
+[Back to JS Script Location](./script-location.md) 
 
 ## Introduction
 
@@ -77,3 +77,5 @@ console.log(5 + 6);
 ````
 
 -----
+
+ [Back to JS Script Location](./script-location.md)
