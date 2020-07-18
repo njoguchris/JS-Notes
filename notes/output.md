@@ -1,7 +1,7 @@
 # JS Output
 > * By Chris Njogu
 
-[Back to JS Script Location](./script-location.md) 
+[<< Previous Lesson - JS Script Location](./script-location.md) 
 
 ## Introduction
 
@@ -78,4 +78,4 @@ console.log(5 + 6);
 
 -----
 
- [Back to JS Script Location](./script-location.md)
+ [<< Previous Lesson - JS Script Location](./script-location.md)
