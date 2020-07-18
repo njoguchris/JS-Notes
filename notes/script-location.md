@@ -1,7 +1,7 @@
 # JS Script Location
 > * By Chris Njogu
 
-[JS Introduction](./introduction.md) |  [JS Version](./version.md) | [JS Script Location](./script-location.md) | [JS Output](./output.md)
+ [Back to JS Version ](./version.md) | [Next to JS Output](./output.md)
 
 
 ## Introduction
@@ -46,3 +46,4 @@ function greetings() {
   3. Cached JavaScript files can speed up page loads
 
 -----
+[Back to JS Version](./version.md) | [Next to JS Output](./output.md)
