@@ -1,7 +1,8 @@
 # JS Introduction
 > * By Chris Njogu
 
-[TOC]
+
+[JS Introduction](./introduction.md) |  [JS Version](./version.md) | [JS Script Location](./script-location.md) | [JS Output](./output.md)
 
 
 
