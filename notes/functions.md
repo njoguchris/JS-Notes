@@ -564,9 +564,4 @@ A callback function is a function passed as a parameter to another function.
 
 ----
 
-## References
-
-* [Javascript] (http://sweeteason.pixnet.net/blog/post/40371736)
-
-
 
