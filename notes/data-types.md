@@ -375,3 +375,243 @@ console.log(ary2.length);      // 10
 ````
 
 ---
+
+## Objects
+
+### 1. Object 
+
+__object literal__ 
+
+Example:
+
+````js
+// object literal
+var person = {
+  firstName : "John",
+  lastName : "Doe",
+  age : 50,
+  eyeColor : "blue"
+};
+
+console.log( person.firstName + " is " + person.age + " years old." ); // John is 50 years old.
+console.log( person.toString() ); //[object Object]
+console.log( person ); // {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"}
+
+person.address = "Mars Rd. 123";
+console.log( person ); //{firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue", address: "Mars Rd. 123"}
+````
+
+
+
+### 2. Object Properties
+
+````js
+var person = {
+  firstName:"John"
+};
+
+person.firstName;     //"John"
+person["firstName"];  //"John"
+// person[firstName];    // X (not work)
+````
+
+
+
+### 3. Object Methods
+
+- Methods  (Methods are actions that can be performed on objects.)
+- Method -  property value,function (Methods are stored in properties as function definitions. A method is actually a function definition stored as a property value.)
+
+Example of accessing properties and methods:
+
+```js
+var person = {
+  firstName:"John",
+  lastName:"Smith",
+  getFullName:function(){
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+console.log( person.firstName ); //"John"
+console.log( person["firstName"] ); //"John"
+// console.log( person[firstName] ); // X (not work)
+console.log( person.getFullName ); // ƒ (){ return this.firstName + " " + this.lastName; }
+console.log( person.getFullName() ); //"John Smith"
+```
+
+
+
+### 4. Objects, Properties, and Methods 
+
+Example:
+
+````js
+var car = {type:"Fiat", model:"500", color:"white"}; //property(e.g.type), property value(e.g."Fiat")
+````
+
+
+
+### 5. Constructor Property
+
+The **constructor property** returns the **constructor function** for all JavaScript variables.    
+
+````js
+console.log("John".constructor);                // Returns function String()  {[native code]}
+console.log((3.14).constructor);                // Returns function Number()  {[native code]}
+console.log(false.constructor);                 // Returns function Boolean() {[native code]}
+console.log([1,2,3,4].constructor);             // Returns function Array()   {[native code]}
+console.log({name:'John',age:34}.constructor);  // Returns function Object()  {[native code]}
+console.log(new Date().constructor);            // Returns function Date()    {[native code]}
+console.log(function () {}.constructor);        // Returns function Function(){[native code]}
+console.log(NaN.constructor);                   // Returns function Number(){[native code]}
+console.log(null.constructor);                  // X (Cannot read property 'constructor' of null)
+````
+
+
+Date/Array `typeof`   **constructor property** 
+
+````js
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
+
+function isArray(myArray) {
+    return myArray.constructor === Array;
+}
+
+function isDate(myDate) {
+    return myDate.constructor.toString().indexOf("Date") > -1;
+}
+
+function isDate(myDate) {
+    return myDate.constructor === Date;
+}
+````
+
+
+
+
+---
+
+## Undefined
+
+* `undefined`，typeof `undefined` (In JavaScript, a variable without a value, has the value undefined. The typeof is also undefined.)
+
+Example:
+
+````js
+var name = ""; //empty string, value is "", type is string)
+var person; // Value is undefined, type is undefined
+name = undefined; // Value is undefined, type is undefined
+````
+
+---
+
+## Null
+
+JavaScript  Null
+
+> In JavaScript null is "nothing".   
+> It is supposed to be something that doesn't exist.    
+> Unfortunately, in JavaScript, the data type of null is an object.    
+> You can consider it a bug in JavaScript that typeof null is an object.    
+> It should be null.    
+
+
+
+You can empty an object by setting it to null or undefined.
+
+Example:
+
+````js
+var person = null; // Value is null, but type is still an object
+var person = undefined; // Value is undefined, type is undefined
+````
+
+---
+
+## Arrays vs. Objects
+
+
+In JavaScript:
+* **arrays** use numbered indexes
+* **objects** use named indexes
+
+JavaScript does not support arrays with named indexes.
+* Arrays with named indexes are called associative arrays (or hashes).
+* If you use a named index, when accessing an array, JavaScript will redefine the array to a standard object.
+
+
+----
+
+
+
+## Undefined vs. Null
+
+* null is for objects
+* undefined is for variables, properties, and methods.
+
+
+````js
+typeof undefined // undefined
+typeof null // object
+null == undefined // true
+null === undefined // false
+````
+
+
+
+---
+
+## Do Not Declare Primitive as Objects
+
+__Avoid String, Number, and Boolean objects.__
+
+* When a JavaScript variable is declared with the keyword __"new"__, the variable is created as an object.
+
+Example:
+
+````js
+var x = new String(); // Declares x as a String object
+var y = new Number(); // Declares y as a Number object
+var z = new Boolean(); // Declares z as a Boolean object
+````
+
+
+
+__Why Not?__
+
+1. Slow down execution speed
+2. Complicate your code. This can produce some unexpected results.
+
+Example:
+
+````js
+// EX1: comparing a primitive string and a string object
+var x = "John";
+var y = new String("John");
+console.log(typeof x); // string
+console.log(typeof y); //object
+console.log(x==y); // ture (because x and y have equal values)
+console.log(x===y); // false (because x and y have different types)
+
+// EX2: comparing 2 string objects
+var s1 = new String("John");
+var s2 = new String("John");
+console.log(s1==s2); // false (because s1 and s2 are different objects)
+console.log(s1===s2); // false (because s1 and s2 are different objects)
+````
+
+> Note:
+> __Comparing two JavaScript objects will always return false.__
+
+---
+
+## Methods and Properties Are Available to Primitive
+
+* Primitive values (like "John Doe") __cannot__ have properties or methods (because they are not objects).
+* But with JavaScript, __methods and properties are also available to primitive values__
+  * Because JavaScript treats primitive values as objects when executing methods and properties.
+
+---
