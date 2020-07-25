@@ -10,3 +10,7 @@ This are a compilation of shorthand notes for JavaScript. I believe they are goi
 2. [JS Version](./notes/version.md)
 3. [JS Script Location](./notes/script-location.md)
 4. [JS Output](./notes/output.md)
+5. [JS Syntax & Statements](./notes/syntax.md)
+6. [JS Variables](./notes/variables.md)
+7. [JS Functions (Code Blocks)](./notes/functions.md)
+8. [JS Data Types](./notes/data-types.md)
