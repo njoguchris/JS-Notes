@@ -57,7 +57,7 @@ console.log( typeof toCelsius(77) ); //"number"
 
 > ES6  —— Arrow Function
 
-#### 1. ** (function declarations)**
+#### 1. Function Declarations
 
 ````js
 //syntax 1: Function Declarations (Hoisting)
@@ -68,7 +68,7 @@ function myFunc1(a, b) {
 ````
 
 
-#### 2. ** (function expressions without function name)**
+#### 2. Function expressions without function name
 
 *  function  anonymous function (a function without a name)
 *  function body  function 
@@ -80,10 +80,9 @@ console.log(myFunc2); // ƒ (a, b) {return a * b}
 ````
 
 
-#### 3. ** (function expressions w/ function name)** *()*
+#### 3. Function expressions with function name
 
 *  function name ()
-* **function name **
 * ( function scope，scope name，function name)
 
 ````js
@@ -94,7 +93,7 @@ console.log(aaa); // Uncaught ReferenceError: aaa is not defined
 ````
 
 
-#### 4. **  (function constructor)** *()*
+#### 4. Function constructor
 
 * with a built-in JavaScript function constructor called `Function()`
 * **it's unnecessary to use this way**
