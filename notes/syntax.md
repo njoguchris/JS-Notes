@@ -1,6 +1,6 @@
 # JS Syntax & Statements
 
-[ << Previous Lesson - JS Output](./output.md) | [Next Lesson >> JS Vriables](./variables.md)
+[ << Previous Lesson - JS Output](./output.md) | [Next Lesson >> JS Variables](./variables.md)
 
 
 
