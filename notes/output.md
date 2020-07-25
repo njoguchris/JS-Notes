@@ -1,7 +1,7 @@
 # JS Output
 > * By Chris Njogu
 
-[<< Previous Lesson - JS Script Location](./script-location.md) 
+[<< Previous Lesson - JS Script Location](./script-location.md) | [Next Lesson >> JS Variables](./variables.md)
 
 ## Introduction
 
