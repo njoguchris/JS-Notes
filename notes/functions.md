@@ -35,8 +35,6 @@ func5(); //222
 
 ## Function 
 
-*  `()` 
-
 
 ```js
 // declaration function
@@ -70,7 +68,7 @@ function myFunc1(a, b) {
 ````
 
 
-#### 2. ** (function expressions w/o function name)**
+#### 2. ** (function expressions without function name)**
 
 *  function  anonymous function (a function without a name)
 *  function body  function 
@@ -84,8 +82,8 @@ console.log(myFunc2); // ƒ (a, b) {return a * b}
 
 #### 3. ** (function expressions w/ function name)** *()*
 
-*  function 印出來會有 function name ()
-* * function name **  function name 
+*  function name ()
+* **function name **
 * ( function scope，scope name，function name)
 
 ````js
@@ -119,9 +117,6 @@ console.log(myFunc3); // ƒ anonymous(a,b /*``*/) { return a * b }
   * constructor
 
 
-
-
-
 ----
 
 
@@ -130,17 +125,13 @@ console.log(myFunc3); // ƒ anonymous(a,b /*``*/) { return a * b }
 > A Function is much the same as a Procedure or a Subroutine, in other programming languages.
 
 * __Function names__ :
-  * 
 * 
   * __Function parameters__ : (are the names listed in the function definition.)
   * __Function arguments__ : (are the real values received by the function when it is invoked.)
   * arguements paramters  local  (Inside the function, the arguments (the parameters) behave as local variables.)
 * __Function Return__ : When JavaScript reaches a return statement, the function will stop executing.
 * **Function Signature**:
-  * ()
-  *  overloadding
-  *  
-
+*  **Function overloadding **
 
 Example 1:
 
@@ -532,7 +523,7 @@ window.myFunction(10, 2);
 
 ----
 
-## Nested Functions (巢狀 Function)
+## Nested Functions  (Function)
 
 inner function
 
