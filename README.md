@@ -14,3 +14,4 @@ This are a compilation of shorthand notes for JavaScript. I believe they are goi
 6. [JS Variables](./notes/variables.md)
 7. [JS Functions (Code Blocks)](./notes/functions.md)
 8. [JS Data Types](./notes/data-types.md)
+9. [JS Operators](./notes/operators.md)
