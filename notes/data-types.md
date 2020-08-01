@@ -1,6 +1,6 @@
 # JS Data Types
 
-[ << Previous Lesson - JS Functions ](./functions.md) 
+[ << Previous Lesson - JS Functions ](./functions.md)  [  Next Lesson >> - JS Operators ](./operators.md) 
 
 
 ## JS Data Types are Dynamic
