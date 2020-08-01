@@ -2,6 +2,9 @@
 
 ---
 
+[ << Previous Lesson - JS Data Types ](./data-types.md) 
+
+
 ## Arithmetic Operators 
 
 ### Overview
@@ -315,6 +318,6 @@ var x = (100 + 50) * 3;  // 450
 
 
 
-* JavaScript Operator Precedence Values (Check this out)
+* JavaScript Operator Precedence Values
 
-[Operator Precedence ] (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+[Read More Operator Precedence ](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
